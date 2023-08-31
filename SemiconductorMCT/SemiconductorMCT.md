@@ -1,3 +1,5 @@
-# SemiconductorMCT
+# 半导体材料表征技术
+
+半导体材料表征技术，就是关于半导体材料测试。
 
 :[Chapter01](Chapter01.md)
