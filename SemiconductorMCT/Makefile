@@ -1,4 +1,4 @@
-PROJECT:=MicroNanoManuf
+PROJECT:=SemiconductorMCT
 
 BUILD_DIR:=build
 
