@@ -1,0 +1,109 @@
+\chapter{红外吸收光谱}
+
+\section{红外吸收光谱的基本原理}
+
+光是一种电磁波，具有波粒二象性。
+
+波动性，可以用频率$\nu$和波数$\xwav{\nu}$表示
+\begin{Equation}
+    \nu=c\xwav{\nu}
+\end{Equation}
+粒子性，可以用光量子的能量来描述
+\begin{Equation}
+    E=h\nu=hc\xwav{\nu}
+\end{Equation}
+
+红外光的波谱范围：处于可见区域与微波之间，波长范围$0.78\si{um}$至$500\si{um}$间
+\begin{itemize}
+    \item 近红外区（泛频区）：波长$0.78\si{um}$至
+\end{itemize}
+
+原子与分子所具有的能量是量子化的，称之为原子或分子的能级，有平动能级、转动能级、振动能级、电子能级。基团从基态振动能级跃迁到上一个振动能级所吸收的辐射正好落在红外区，所以红外光谱是由于分子振动能级的跃迁而产生的。
+
+红外光谱（Infrared Absorption Sepectroscopy）：利用物质对红外光的吸收及产生的红外吸收光谱来鉴别分子的组成和结构的方法，分子能选择性吸收某些波长的红外线，而引起分子中振动能级和转动能级的跃迁，检测红外吸收的情况可以得到物质的红外吸收光谱，又称为分子振动光谱或振动转动光谱。
+
+分子的振动形式和红外吸收频率
+\begin{itemize}
+    \item 伸缩振动：沿着键轴方向伸缩的振动，只改变键长，不改变键角，它的吸收频率相对在高波数区。
+    \item 弯曲振动：除伸缩振动外的其他一切振动都属于弯曲振动，只改变键角，不改变键长，它的吸收频率相对在低波数区。
+\end{itemize}
+
+双原子分子的红外吸收频率，从经典力学的观点，采用谐振子模型来研究双原子分子的振动，即化学键相当于无质量的弹簧，它连接两个刚性小球，两个刚性小球的质量分别相当于两个原子的质量。
+
+两个原子之间的伸缩振动可以视为一种简谐振动
+\begin{Equation}
+    \nu=\frac{1}{2\pi}\sqrt{\frac{k}{\mu}}\qquad
+    \mu=\frac{m_1m_2}{m_1+m_2}
+\end{Equation}
+即
+\begin{Equation}
+    \nu=\frac{1}{2\pi}\sqrt{k/\frac{m_1m_2}{m_1+m_2}}
+\end{Equation}
+发生振动能级跃迁需要能量的大小取决于键两端原子的折合质量和键的力常数，即取决于分子的结构特征，化学键越强，
+
+红外光谱产生条件
+\begin{enumerate}
+    \item 吸收红外光能量恰好等于振动跃迁的所需能量，
+    \item 分子在振动和转动过程中的净偶极矩的变换$\delt{\mu}\neq 0$，即分子产生红外活性振动。
+\end{enumerate}
+分子振动能级
+\begin{Equation}
+    E_\te{振动}=\qty(V+\frac{1}{2})h\nu
+\end{Equation}
+任意两个相邻的能级间的能量差为
+\begin{Equation}
+    \delt{E}_\te{振动}=E_1-E_2=h\nu=\qty[(1+\frac{1}{2})-(0+\frac{1}{2})]h\nu_\te{振动}
+\end{Equation}
+峰数
+\begin{itemize}
+    \item 含有$n$个原子的线型分子振动自由度$3n-5$
+    \item 含有$n$个原子的非线型分子振动自由度$3n-6$
+\end{itemize}
+倍频峰中，二倍频峰还比较强，三倍频以上，因跃迁几率很小，一般都很弱，常常不能测到。
+
+朗伯--比尔定律的基本内容是，光吸收过程中，光的能量是按指数形势耍贱的。
+
+透射比
+\begin{Equation}
+    T=\frac{I_t}{I_0}=10^{-\varepsilon bc}
+\end{Equation}
+定义吸光度
+\begin{Equation}
+    A=-\log T
+\end{Equation}
+于是
+\begin{Equation}
+    A=\varepsilon bc
+\end{Equation}
+其中，$\varepsilon$为摩尔消光系数，$b$为光程，$c$为浓度（实际$bc$代表光经过的物质的量）。
+
+样品中同时存在两种物质产生光吸收时，两者互不影响，并且总的吸光度存在加和性
+\begin{Equation}
+    A_\te{总}=A_\te{背景}+A_\te{目标物}
+\end{Equation}
+这样一来
+\begin{Equation}
+    A_\te{目标物}-A_\te{总}-A_\te{背景}=\log\frac{I_0}{I_t}-\log\frac{I_0}{I_t'}
+\end{Equation}
+峰强和键的极性有关
+\begin{itemize}
+    \item 非常强峰，vs，$\varepsilon>100$
+    \item 强峰，s，$20<\varepsilon<100$
+    \item 中强峰，m，$10<\varepsilon 20$
+    \item 弱峰，w，$1<\varepsilon<10$
+\end{itemize}
+特征频率区
+\begin{itemize}
+    \item \ce{Y-H}伸缩振动区，$2500$至$3700$\si{cm^{-3}}
+    \item \ce{Y#Z}三键和累计双键伸缩振动区，$2100$至$2400$\si{cm^{-3}}
+    \item \ce{Y=Z}双键伸缩振动区，$1600$至$1800$\si{cm^{-3}}
+\end{itemize}
+影响官能团吸收频率的因素
+\begin{itemize}
+    \item 诱导效应：吸电子基团使羰基吸收峰向高频移动（蓝移）
+    \item 共轭效应：羰基与别的双键共轭，其$\pi$电子的离域增大，从而减小了双键的键极，使吸收峰向低频方向移动。
+    \item 杂化效应：s轨道越多，键能越大，键长越短，吸收在高波数区。
+    \item 氢键效应：氢键对峰位和峰强产生明显影响，使伸缩振动频率向低波数方向移动。
+    \item 溶剂：通常在极性溶剂中，溶质分子的极性基团向伸缩振动频率随溶剂极性的增加而向低波数方向移动，并且强度增大。
+    \item 物态：振动频率：气态$>$液态$>$固态。
+\end{itemize}

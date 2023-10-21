@@ -3,3 +3,68 @@
 \RequirePackage{chemfig}
 
 \newcommand{\te}[1]{\text{#1}}
+
+\sisetup{list-final-separator = {, }}
+\sisetup{range-phrase = {\;\text{\textasciitilde}\;}}
+
+\newcommand{\cx}[1]{$\ce{#1}$}
+\def\dc{\degreeCelsius}
+
+\NewDocumentEnvironment{Chemeq}{b}
+{%
+    \begin{center}
+        \ce{#1}
+    \end{center}
+}{}%
+
+
+\def\xEval#1{\expandafter\csname#1\endcsname}
+
+\NewDocumentCommand{\xGeneratePoints}{mm}%
+{%
+    \foreach \x in {#1}%
+    {%
+        \path (\xEval{\x},0) coordinate(\x);%
+    }%
+    \foreach \y in {#2}%
+    {%
+        \path (0,\xEval{\y}) coordinate(\y);%
+    }%
+    \foreach \x in {#1}%
+    {%
+        \foreach \y in {#2}%
+        {%
+            \path (\xEval{\x},\xEval{\y}) coordinate(\x/\y);%
+        }%
+    }%
+}%
+
+\NewDocumentCommand{\xValDefine}{mO{0}}%
+{%
+    \expandafter\def\csname#1\endcsname{#2}%
+}%
+
+\NewDocumentCommand{\xValOffset}{mmO{0}}%
+{%
+    \xValDefine{#1}[\fpeval{(\xEval{#2})+(#3)}]%
+}%
+
+\NewDocumentCommand{\xValProportion}{mmmO{0.5}}%
+{%
+    \xValDefine{#1}[\fpeval{(1-#4)*(\xEval{#2})+(#4)*(\xEval{#3})}]%
+}%
+
+\NewDocumentCommand{\xValMiddle}{mmm}%
+{%
+    \xValProportion{#1}{#2}{#3}[0.5]%
+}%
+
+\NewDocumentCommand{\xValMirror}{mmm}%
+{%
+    \xValProportion{#1}{#2}{#3}[2]%
+}%
+
+\NewDocumentCommand{\xValSymmetrize}{mmmm}%
+{%
+    \xValDefine{#1}[\fpeval{\xEval{#3}+\xEval{#4}-\xEval{#2}}]%
+}%

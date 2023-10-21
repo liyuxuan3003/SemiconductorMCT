@@ -27,8 +27,11 @@ deltaB=Simplify[(1/(1-sstd)-1/(1-ssam))/(1/(1-sstd))]
 deltaN=Simplify[((1-ssam)-(1-sstd))/(1-sstd)]
 
 
-Plot[Evaluate[deltaB//.{sstd->Table[x,{x,0.2,0.8,0.2}]}],{ssam,0,1},Evaluate@xFigConfig]
-Plot[Evaluate[deltaN//.{sstd->Table[x,{x,0.2,0.8,0.2}]}],{ssam,0,1},Evaluate@xFigConfig]
+Plot[Evaluate[{deltaB,deltaN}//.{sstd->0.2}],{ssam,0,1},Evaluate@xFigConfig,PlotRange->{-1,1}]
+
+
+Plot[Evaluate[deltaB//.{sstd->Table[x,{x,0.0,0.0,0.2}]}],{ssam,0,1},Evaluate@xFigConfig,PlotRange->{-1,0}]
+Plot[Evaluate[deltaN//.{sstd->Table[x,{x,0.0,0.0,0.2}]}],{ssam,0,1},Evaluate@xFigConfig,PlotRange->{-1,0}]
 
 
 MoleculePlot3D[Molecule[Entity["Chemical", "Ethylene"]]]

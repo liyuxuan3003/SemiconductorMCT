@@ -1,0 +1,84 @@
+\section{质谱法的构造}
+质谱法构造组成如下
+\begin{itemize}
+    \item 进样系统
+    \begin{enumerate}
+        \item 间歇进样
+        \item 直接进样
+        \item 色谱进样
+    \end{enumerate}
+    \item 离子源
+    \begin{enumerate}
+        \item 电子轰击
+        \item 化学电离
+        \item 场致电离
+        \item 激光
+    \end{enumerate}
+    \item 质量分析器
+    \begin{enumerate}
+        \item 单聚焦
+        \item 双聚焦
+        \item 飞行时间
+        \item 四极杆
+    \end{enumerate}
+    \item 检测器
+\end{itemize}
+
+\subsection{质谱仪的高真空要求}
+质谱仪的离子源、质量分析器及检测器必须处于高真空状态
+\begin{itemize}
+    \item 质谱仪的离子源的真空度应达到$\SIrange{e-3}{e-5}{Pa}$
+    \item 质量分析器的真空度应达到$\SI{e-6}{Pa}$
+\end{itemize}
+若真空度低，则
+\begin{itemize}
+    \item 离子源的灯丝会被大量氧烧坏。
+    \item 离子源中的电子束的正常调节会被干扰。
+    \item 本底增高，引发额外的离子--分子翻译，改变裂解模型，使质谱解释复杂化。
+    \item 用作加速离子的几千伏高压会引发放电。
+\end{itemize}
+
+\subsection{质谱仪的进样系统}
+进样系统的作用是高效重复的将样品引入到离子源中，并且，该过程中，不能使真空度降低。
+
+\subsubsection{间歇式进样系统}
+间歇式进样系统，适用于低沸点易挥发的液体或固体，或气体样品。
+
+间歇式进样系统通过可拆卸式的试样管将少量$\SIrange{10}{100}{ug}$固体或液体试样引入试样储存器中，由于进样系统的低压强和储存器的加热装置，试样将保持气态。由于进样系统的压强比离子源的压强要大，样品离子可以通过分子漏隙以分子流的形式渗透进入高真空的离子源。
+
+\subsubsection{直接探针进样系统}
+直接探针进样系统，适用于高沸点的液体或固体。直接探针进样系统通过探针（Probe）杆直接进样，调节加热温度，使试样转化为蒸汽。此方法可以将$\SI{1}{ug}$量级甚至更少的试样送入电离室。探针杆中试样的温度，可以冷却至约$\SI{-100}{\dc}$，同时，可以在几秒内加热至约$\SI{300}{\dc}$。
+
+\subsubsection{色谱进样}
+利用气相色谱和液相色谱的分离能力，与质谱仪连用，进行多组分复杂混合物的分析。
+
+\subsection{质谱仪的离子源}
+离子源的功能是将进样系统引入的气态样品分子转化为离子，由于离子化所需的能量随分子的不同差异很大，因此，对于不同的分子，应选择不同的离子化方法，具体而言
+\begin{itemize}
+    \item 给样品较大能量的电离方法，称为\uwave{硬电离方法}。
+    \item 给样品较小能量的电离方法，称为\uwave{软电离方法}。
+\end{itemize}
+离子化的方法有很多
+\begin{itemize}
+    \item 电子轰击电离（Electron Impaction Ionization, EI）
+    \item 化学电离（Chemical Ionization, CI）
+    \item 场电离（Field Ionization, FI）
+    \item 场解吸（Field Desorption, FD）
+    \item 快原子轰击（Fast Atom Bombardment, FAB）
+    \item 基质辅助激光解析电离（Matrix-Assisted Laser Desorption Ionization, MALDI）
+    \item 电喷雾电离（Electrosparay Ionization, ESI）
+    \item 大气压化学电离（Atmospheric Pressure Chemical Ionization, APCI）
+\end{itemize}
+
+\subsubsection{电子轰击电离}
+电子轰击是通用的电离法，是使用高能电子束从试样中撞出一个电子而产生电子，即
+\begin{Chemeq}
+    M + e- -> M+ + 2e-
+\end{Chemeq}
+其中，\cx{M}为待测分子，\cx{M+}为分子离子，当电子轰击源有足够的能量，通常约$\SI{70}{eV}$时，有机物的分子可能不仅失去一个电子形成分子离子，而且还有可能进一步发生键的断裂，形成大量的各种低质量束的碎片离子和中性自由基团，这些碎片离子也可以辅助结构鉴定。
+
+具体而言，试想待测分子\cx{M}为\cx{ABC}
+\begin{itemize}
+    \item \uwave{分子离子}：分子失去一个电子形成的离子，即\cx{ABC+}
+    \item \uwave{碎片离子}：分子碎裂后形成的离子，比如可能有\cx{A+}，\cx{B+}，\cx{C+}，\cx{AB+}，\cx{AC+}等
+\end{itemize}

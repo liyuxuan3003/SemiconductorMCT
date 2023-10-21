@@ -1,0 +1,41 @@
+\documentclass{xStandalone}
+
+\begin{document}
+\begin{tikzpicture}
+
+\xValDefine{xL}[-6]
+\xValDefine{xR}[+2]
+\xValMiddle{xC}{xL}{xR}
+\xValDefine{xTMS}[0]
+\xValProportion{xLx}{xL}{xR}[0.05]
+\xValMirror{xRx}{xLx}{xC}
+\xValOffset{xBorL}{xL}[-1]
+\xValOffset{xBorR}{xR}[+1]
+
+\xValDefine{yC}[0]
+\xValOffset{yTicks}{yC}[0.1]
+\xValOffset{yBorB}{yC}[-0.5]
+\xValOffset{yBorA}{yC}[+1]
+
+\xGeneratePoints{xTMS,xL,xR,xC,xLx,xRx,xBorL,xBorR}{yC,yTicks,yBorB,yBorA}
+
+\draw (xL|-yC) -- (xR|-yC);
+\foreach \x in {\xL,\fpeval{\xL+0.5},...,\xR}
+{
+    \draw (\x,\yC) node[below] {\tiny \ifthenelse{\equal{\x}{0}}{0}{$\fpeval{-2*\x}$}} -- (\x,\yTicks);
+}
+
+\path (xTMS|-yC) node[above=0.1cm] {\tiny TMS};
+\path (xL|-yC) node[left]  {\tiny  低场高频};
+\path (xR|-yC) node[right] {\tiny  高场低频};
+\path (xC|-yC) node[below=0.4cm] {$\delta$};
+\path (xLx|-yC) node[above=0.2cm] {\tiny 化学位移$\delta$较大};
+\path (xRx|-yC) node[above=0.2cm] {\tiny 化学位移$\delta$较小};
+\path (xLx|-yC) node[below=0.3cm] {\tiny 屏蔽效应弱};
+\path (xRx|-yC) node[below=0.3cm] {\tiny 屏蔽效应强};
+
+\draw[ultra thin] ()
+
+
+\end{tikzpicture}
+\end{document}
