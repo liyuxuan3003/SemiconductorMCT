@@ -1,0 +1,182 @@
+\section{红外吸收光谱的频率}
+
+\subsection{分子的振动模式}
+分子的振动主要可以分为两类：伸缩振动、弯曲振动。
+
+\subsubsection{分子的伸缩振动}
+\uwave{伸缩振动}：只改变键长，不改变键角，吸收频率相对在高波数区/高频（近红外）
+\begin{itemize}
+    \item 对称的伸缩振动，强吸收，波数$\SI{2853}{cm^{-1}}$
+    \item 反称的伸缩振动，强吸收，波数$\SI{2853}{cm^{-1}}$
+\end{itemize}
+
+\subsubsection{分子的弯曲振动}
+\uwave{弯曲振动}：只改变键角，不改变键长，吸收频率相对在低波数区/低频（中红外）
+\begin{itemize}
+    \item 面内弯曲振动，中吸收
+    \begin{itemize}
+        \item 面内摇动，波数$\SI{720}{cm^{-1}}$
+        \item 剪切振动，波数$\SI{1468}{cm^{-1}}$
+    \end{itemize}
+    \item 面外弯曲振动，弱吸收
+    \begin{itemize}
+        \item 扭曲，波数$\SI{1250}{cm^{-1}}$
+        \item 摇摆，波数$\SI{1303}{cm^{-1}}$
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{双原子分子的吸收频率}
+从经典力学的观点，采用谐振子模型来研究双原子分子的振动，即化学键相当于无质量的弹簧，它连接两个刚性小球，两个刚性小球的质量分别相当于两个原子的质量，由此，频率为
+\begin{Equation}
+    \nu=\frac{1}{2\pi}\sqrt{\frac{k(m_1+m_2)}{m_1m_2}}=\frac{1}{2\pi}\sqrt{\frac{k}{\mu}}
+\end{Equation}
+容易由$\hat{\nu}=\nu/c$得到波数
+\begin{Equation}
+    \nu=\frac{1}{2\pi c}\sqrt{\frac{k(m_1+m_2)}{m_1m_2}}=\frac{1}{2\pi c}\sqrt{\frac{k}{\mu}}
+\end{Equation}
+这里$\mu$称为原子$m_1,m_2$的折合质量
+\begin{Equation}
+    \mu=\frac{m_1m_2}{m_1+m_2}
+\end{Equation}
+这里可以得出以下结论
+\begin{itemize}
+    \item 化学键键能越强即$k$越大，原子折合质量越小$m$越小，吸收峰将出现在高波数区。
+    \item 化学键键能越弱即$k$越小，原子折合质量越大$m$越大，吸收峰将出现在低波数区。
+\end{itemize}
+
+\subsubsection{红外光谱的产生调节}
+分子的振动能级
+\begin{Equation}
+    E_v=\qty(V+\frac{1}{2})h\nu
+\end{Equation}
+这里，$V$为振动量子数，$\nu$为振动频率，而任意两个相邻能级的能量差即
+\begin{Equation}
+    \delt{E_v}=h\nu
+\end{Equation}
+这就表明，吸收红外光的能量恰等于振动跃迁所需的能量。
+
+\subsection{红外光谱的峰数}
+红外光谱的峰数取决于跃迁的形式
+\begin{itemize}
+    \item 由$V=0$跃迁至$V=1$，即基频峰。
+    \item 由$V=0$跃迁至$V=2$，即二倍频峰。
+    \item 由$V=0$跃迁至$V=3$，即三倍频峰。
+\end{itemize}
+倍频峰中，二倍频峰还比较强，三倍频峰及以上由于跃迁概率很小，一般都很弱，常常不能检测到，除此之外，还有合频峰（例如$V_1+V_2$）和差频峰（例如$V_1-V_2$），这些峰通常也很弱。
+
+倍频峰、合频峰、差频峰，合称为泛频峰。
+
+\subsection{红外光谱的峰强}
+\uwave{朗伯--比尔定律}的基本内容是：光吸收过程，光的能量是按指数形式衰减的。
+
+朗伯--比尔定律在这里就是称，透射比可以表示为
+\begin{Equation}
+    T=\frac{I}{I_0}=10^{-\varepsilon bc}
+\end{Equation}
+其中，$\varepsilon$为摩尔消光系数，$b$为光程，$c$为浓度。
+
+吸光度定义为
+\begin{Equation}
+    A=-\log T=-\log\frac{I}{I_0}
+\end{Equation}
+吸光度因此可以表示为
+\begin{Equation}
+    A=\varepsilon bc
+\end{Equation}\goodbreak
+峰强与键的极性（键两端原子的电负性差值）有关，具体而言
+\begin{itemize}
+    \item 极性较强的基团，吸收强度较大，例如\cx{C=O}、\cx{C-X}等。
+    \item 极性较弱的基团，吸收强度较小，例如\cx{C=C}、\cx{C-C}、\cx{N=N}等
+\end{itemize}
+红外光谱的吸收强度通常依\xref{tab:红外光谱的峰强}定性表示，以摩尔吸光系数$\varepsilon$划分
+\begin{Tablex}[红外光谱的峰强]{XXXX}
+<峰强等级&峰强记号&峰强记号含义&摩尔吸光系数的范围\\>
+非常强峰&vs&very strong&\num{>1e2}\\
+强峰&s&strong&\numrange{2e1}{1e2}\\
+中强峰&m&medium&\numrange{1e1}{2e1}\\
+弱峰&w&weak&\numrange{1e0}{1e1}\\
+非常弱峰&vw&very weak&\num{<1e0}\\
+\end{Tablex}
+
+\subsection{官能团的特征频率}
+化学键振动的特性性，用基团频率来表现
+\begin{itemize}
+    \item 特征性：同类型的基团具有特定的频率。
+    \item 差异性：同类型的基团在不同的化学环境中频率略有差别。
+\end{itemize}
+中红外光谱的波数范围是$\SIrange{4e3}{4e2}{cm^{-1}}$，其特征频率如\xref{tab:官能团的特征频率}所示
+\begin{Tablex}[官能团的特征频率]{llX}
+<区域名称&波数范围（$\si{cm^{-1}}$）&基团及振动形式\\>
+氢键区&\numrange{4.0e3}{2.5e3}&\cx{O-H}、\cx{C-H}、\cx{N-H}等的伸缩振动\\
+三键区\footnotemark&\numrange{2.5e3}{2.0e3}&\cx{C#C}、\cx{C#N}、\cx{N#N}、\cx{C=C=C}、\cx{N=C=O}等的伸缩振动\\
+双键区&\numrange{2.0e3}{1.5e3}&\cx{C=O}、\cx{C=C}、\cx{C=N}、\cx{NO2}、\cx{C6H6}等的伸缩振动\\
+单键区&\numrange{1.5e3}{4.0e2}&\cx{C-C}、\cx{C-O}、\cx{C-N}、\cx{C-X}等的伸缩振动，含氢基团的弯曲振动\\
+\end{Tablex}\footnotetext{这里三键区其实包含了三键和累积双键两种情况。}
+
+中红外光谱中，最有分析价值的基团频率在$\SIrange{4.0e3}{1.3e3}{cm^{-1}}$，这一区间也倍称为\uwave{特征频率区}，改区内的峰是由伸缩振动产生的吸收带，比较系数，容易辨认，除此之外
+\begin{itemize}
+    \item 指纹区，是指$\SI{<1.6e3}{cm^{-1}}$的低频区，指纹区的特点是谱带密集且难以辨认，指纹区对整个分子结构十分敏感，常用于与标准谱图进行对比，以辨别官能团相似的物质。
+    \item 倍频区，是指$\SI{>3.7e3}{cm^{-1}}$的高频区，倍频区的吸收峰是基本频率的倍频。
+\end{itemize}\goodbreak
+有很多因素可以影响官能团的吸收频率（差异性，化学环境对官能团频率的影响）
+\begin{itemize}
+    \item 内部因素：诱导效应、共轭效应、杂化效应、氢键效应
+    \item 外部因素：溶剂的类型、物质的状态
+\end{itemize}
+
+\subsubsection{诱导效应}
+诱导效应：羰基在连接电负性较强的基团时，吸收峰向高频移动（蓝移）。
+\begin{Figure}[诱导效应]
+    \begin{FigureSub}[\SI{1812}{cm^{-1}};溴羰基]
+        \includegraphics{build/Chapter03B_01.fig.pdf}
+    \end{FigureSub}
+    \hspace{1cm}
+    \begin{FigureSub}[\SI{1815}{cm^{-1}};氯羰基]
+        \includegraphics{build/Chapter03B_02.fig.pdf}
+    \end{FigureSub}
+    \hspace{1cm}
+    \begin{FigureSub}[\SI{1869}{cm^{-1}};氟羰基]
+        \includegraphics{build/Chapter03B_03.fig.pdf}
+    \end{FigureSub}
+\end{Figure}
+
+\subsubsection{共轭效应}
+共轭效应：羰基与别的双键共轭，吸收峰向低频移动（红移）。
+\begin{Figure}[共轭效应]
+    \begin{FigureSub}[\SI{1715}{cm^{-1}};无苯]
+        \includegraphics{build/Chapter03B_04.fig.pdf}
+    \end{FigureSub}\\ \vspace{0.5cm}
+    \begin{FigureSub}[\SI{1685}{cm^{-1}};1苯]
+        \includegraphics{build/Chapter03B_05.fig.pdf}
+    \end{FigureSub}\hspace{1.5cm}
+    \begin{FigureSub}[\SI{1660}{cm^{-1}};2苯]
+        \includegraphics{build/Chapter03B_06.fig.pdf}
+    \end{FigureSub}
+\end{Figure}
+
+\subsubsection{杂化效应}
+杂化效应：s轨道越多，键能越大，键长越短，吸收在高频区。
+\begin{Figure}[杂化效应]
+    \begin{FigureSub}[\SI{1430}{cm^{-1}};单键]
+        \chemfig{-C-C-}
+    \end{FigureSub}
+    \hspace{1cm}
+    \begin{FigureSub}[\SI{1660}{cm^{-1}};双键]
+        \chemfig{-C=C-}
+    \end{FigureSub}
+    \hspace{1cm}
+    \begin{FigureSub}[\SI{2220}{cm^{-1}};三键]
+        \chemfig{-C~C-}
+    \end{FigureSub}
+\end{Figure}
+
+\subsubsection{氢键效应}
+氢键效应：氢键对峰位和峰强产生明显影响，吸收峰向低频区移动。
+
+氢键效应的原理是，氢键的形成使原化学键的键力常数降低，从而使伸缩振动频率降低。
+
+\subsubsection{溶剂的类型}
+溶剂的类型：极性溶剂，吸收峰向低频区移动，吸收峰强度增大。
+
+\subsubsection{物质的状态}
+物质的状体：气态、液态、固态，吸收峰频率依次降低。

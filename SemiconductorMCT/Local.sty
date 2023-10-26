@@ -6,6 +6,10 @@
 
 \sisetup{list-final-separator = {, }}
 \sisetup{range-phrase = {\;\text{\textasciitilde}\;}}
+\sisetup{retain-zero-exponent = true}
+
+\setchemfig{fixed length = true}
+\setchemfig{atom sep=1.5em}
 
 \newcommand{\cx}[1]{$\ce{#1}$}
 \def\dc{\degreeCelsius}
@@ -17,6 +21,7 @@
     \end{center}
 }{}%
 
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 \def\xEval#1{\expandafter\csname#1\endcsname}
 

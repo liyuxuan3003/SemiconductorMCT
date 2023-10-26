@@ -1,0 +1,64 @@
+\section{红外吸收光谱的基本原理}
+
+\subsection{光谱的概念}
+光是一种电磁波，具有波粒二象性，可以用频率$\nu$和波数$\hat{\nu}=1/\lambda$来描述
+\begin{Equation}
+    \nu=c\hat{\nu}
+\end{Equation}
+光量子的能量正比于其频率
+\begin{Equation}
+    E=h\nu
+\end{Equation}
+在分子光谱中，根据电磁波的波长$\lambda$可以划分出若干区域
+\begin{Tablex}[分子光谱]{XXX}
+<行为&电磁波类型&波谱\\>
+电子自旋&射频区&--\\
+原子核自旋&无线电波&核磁共振NMR\\
+转动跃迁&微波&--\\
+振动跃迁&红外&红外吸收光谱IR\\
+电子跃迁&紫外--可见&紫外可见吸收光谱UV\\
+化学键断裂&X射线&--\\
+\end{Tablex}
+请注意，质谱并不在其中，因为质谱不是一种光谱，它是一种质量谱。
+
+\subsection{红外光的波谱范围}
+红外光在光谱中，处于可见区域与微波之间。
+
+红外光的波长范围是$\SIrange{0.78}{500}{um}$，波数范围是$\SIrange{12820}{20}{cm^{-1}}$。
+
+红外光可以进一步依据其波长或波数，分为三个区域，如\xref{tab:红外光的波谱范围}所示
+
+\begin{Tablex}[红外光的波谱范围]{lllXl}
+    <区域&区域别称&波长（$\si{um}$）&波数（$\si{cm^{-1}}$）&能级跃迁类型\\>
+    近红外区&泛频区&\SIrange{0.78e0}{2.5e0}{}&\SIrange{1.282e4}{4e3}{}&\cx{OH}，\cx{NH}，\cx{CH}的倍频吸收\\
+    中红外区&基本振动区&\SIrange{2.5e0}{2.5e1}{}&\SIrange{4e3}{4e2}{}&振动、伴随转动\\
+    远红外区&骨架振动区&\SIrange{2.5e1}{5.0e2}{}&\SIrange{4e2}{2e1}{}&振动、伴随转动\\
+\end{Tablex}
+原子和分子具有的能量是量子化的，称为原子或分子能级，包含
+\begin{itemize}
+    \item 电子能级
+    \item 振动能级
+    \item 转动能级
+    \item 平动能级（光谱中不涉及）
+\end{itemize}
+原子和分子总的能量可以表达为三个部分的和
+\begin{Equation}
+    E=E_e+E_v+E_r
+\end{Equation}
+其中，$E_e,E_v,E_r$分别为电子能、振动能、转动能，依照\xref{tab:分子光谱}
+\begin{itemize}
+    \item 紫外光谱对应$E_e$，即电子能级。
+    \item 红外光谱对应$E_v,E_r$，即振动能级和转动能级（转动能级其实部分属于微波）。
+\end{itemize}
+简而言之，\empx{红外光谱是由分子振动能级和转动能级产生的}。
+
+\subsection{红外吸收光谱}
+\uwave{红外吸收光谱}（Infrared Absorption Spectroscopy）是指，利用物质分子对红外光的吸收光谱来鉴别分子的组成和结构的方法。分子能选择性的吸收某些波长的红外线，引起分子振动能级和转动能级的跃迁，检测吸收情况即可得到吸收光谱。红外吸收光谱又称为\uwave{振动转动光谱}。
+\begin{itemize}
+    \item 红外吸收光谱的横坐标：波数$\hat{\nu}$，范围在$\SIrange{4e3}{4e2}{cm^{-1}}$，表示吸收峰位置。
+    \item 红外吸收光谱的纵坐标：透过率$T\%$，表示吸收强度（峰是倒过来的）。
+\end{itemize}
+若记$I_0,I$分别为入射光和透射光的强度，则
+\begin{Equation}
+    T=\frac{I}{I_0}\times 100\%
+\end{Equation}
