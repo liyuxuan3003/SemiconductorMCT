@@ -1,0 +1,65 @@
+\section{紫外--可见吸收光谱的原理}
+有机物的紫外--可见吸收光谱是其分子外层电子跃迁的结果，电子可以分为三类
+\begin{itemize}
+    \item $\sigma$电子，即成$\sigma$键的电子（单键），对应成键轨道$\sigma$和反键轨道$\sigma^{*}$。
+    \item $\pi$电子，即成$\pi$键的电子（双键），对应成键轨道$\pi$和反键轨道$\pi^{*}$。
+    \item $n$电子，即未成键的电子，对应非键轨道$n$。
+\end{itemize}
+
+\xref{fig:电子能级跃迁示意图}列出了各能级间的相对位置关系和可能的跃迁
+\begin{Figure}[电子能级跃迁示意图]
+    \includegraphics{build/Chapter04A_01.fig.pdf}
+\end{Figure}
+
+\xref{tab:电子能级跃迁}整理了四种跃迁过程的特点
+\begin{Tablex}[电子能级跃迁]{lllXl}
+<类型&能量&区段&波长$\lambda_{\max}$&备注\\>
+$\sigma\to\sigma^{*}$跃迁&能量最大&远紫外&甲烷$\SI{125}{nm}$、乙烷$\SI{135}{nm}$\\
+$n\to\sigma^{*}$跃迁&能量较大&远紫外&甲醇$\SI{183}{nm}$、一氯甲烷$\SI{173}{nm}$\\
+$\pi\to\pi^{*}$跃迁&能量较小&近紫外&乙烯$\SI{162}{nm}$&$\varepsilon_{\max}=\SI{1e4}{L.mol^{-1}.cm^{-1}}$\\
+$n\to\pi^{*}$跃迁&能量最小&近紫外&丙酮$\SI{275}{nm}$&$\varepsilon_{\max}=\SI{1e2}{L.mol^{-1}.cm^{-1}}$\\
+\end{Tablex}
+
+由于$\pi$键是有机半导体分子的特征结构，因此，有机半导体材料的紫外--可见光谱分析也多以涉及$\pi$电子轨道的$\pi\to\pi^{*}$跃迁和$n\to\pi^{*}$跃迁为主，前者强度可以达到后者的$100$倍以上。
+
+\subsection{生色与助色}
+紫外可见光谱仪可以分析的波长范围（$\SIrange{200}{780}{nm}$）主要由$\pi\to\pi^{*}$跃迁和$n\to\pi^{*}$跃迁产生。这两种跃迁要求分子具有含$\pi$键的不饱和基团，因此这些含有$\pi$键的不饱和基团被称为\uwave{生色团}。简单的生色团由双键和叁键体系组成。同时，有一些含有$n$电子的基团，它们本身没有生色功能，即不能吸收大于$\SI{200}{nm}$的光，但是，它们与生色团链接时，就会发生$n$--$\pi$共轭作用，增强生色团的生色能力，因此这样的基团称为\uwave{助色团}。以下是常见的生色团和助色团
+\begin{itemize}
+    \item 生色团：\cx{-C=C-}、\cx{-C#C-}、\cx{-C=O}、\cx{-C#N}等
+    \item 助色团：\cx{-OH}、\cx{-NH2}、\cx{-X}等
+\end{itemize}
+
+助色团对生色团的影响是：吸收波长向长波方向移动，吸收强度增加。
+
+\subsection{红移与蓝移}
+紫外可见光谱中，有机化合物的吸收谱常常因引入取代基或改变溶剂，使$\lambda_{\max}$和$\varepsilon_{\max}$变化
+\begin{itemize}
+    \item 最大吸收波长$\lambda_{\max}$，增加称为红移，减小称为蓝移。
+    \item 最大吸收强度$\varepsilon_{\max}$，增加称为增色，减小称为减色。
+\end{itemize}
+这里的吸收强度$\varepsilon_{\max}$其实就是摩尔消光系数，即$A=\varepsilon bc$中的$\varepsilon$。
+
+\subsection{摩尔消光系数}
+材料的摩尔吸光系数$\varepsilon$不随浓度$c$和光程长度$b$的改变而改变，仅与吸收材料自身的性质有关。同一物质在不同波长下的$\varepsilon$不同，最强吸收峰对应的$\lambda$和$\varepsilon_{\max}$分别记为$\lambda_{\max}$和$\varepsilon_{\max}$。\goodbreak
+
+吸收光谱中，我们会依据以下参量进行定性分析
+\begin{itemize}
+    \item 吸收峰$\lambda_{\max}$
+    \item 吸收谷$\lambda_{\min}$
+    \item 肩峰$\lambda_{sh}$
+    \item 最大摩尔消光系数$\varepsilon_{\max}$
+\end{itemize}
+
+\subsection{影响紫外光谱的因素}
+有诸多因素会影响紫外光谱
+\begin{itemize}
+    \item 助色基团：助色基团的引入，红移，增色。
+    \item 共轭效应：共轭的效应越强，红移，增色（乙烯，丁二烯，己三烯，辛四烯）。
+    \item 溶剂的影响
+    \begin{itemize}
+        \item 溶剂对吸收峰位置的影响：$\pi\to\pi^{*}$跃迁，溶剂极性增大，吸收峰红移。
+        \item 溶剂对吸收峰位置的影响：$n\to\pi^{*}$跃迁，溶剂极性增大，吸收峰蓝移。
+        \item 溶剂对吸收峰结构的影响：极性增大，吸收峰的振动精细结构消失。
+    \end{itemize}
+\end{itemize}
+因此，通常选用低极性溶剂，且溶剂在样品的吸收光谱区无明显吸收。

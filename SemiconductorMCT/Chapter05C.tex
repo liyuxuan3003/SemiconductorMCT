@@ -1,0 +1,37 @@
+\section{荧光光谱的应用}
+
+\subsection{定量分析}
+根据荧光发生的机理可知，溶液的荧光强度$F$和该溶液的吸收光强度$I_a$以及荧光效率$\phi_F$成正比
+\begin{Equation}
+    F=\phi_F\cdot I_a
+\end{Equation}
+根据朗伯比尔定律，溶液吸收的光量为
+\begin{Equation}
+    I_a=I_0-I_t=I_0(1-10^{-\varepsilon bc})
+\end{Equation}
+其中，$I_0$为入射光强度，$I_t$为透射光强度，$\varepsilon$为摩尔吸光系数。
+
+结合上两式可以得到
+\begin{Equation}
+    F=\phi_FI_0(1-\e^{-2.3\varepsilon bc})
+\end{Equation}
+对于稀溶液，当$\varepsilon bc$小于$0.02$时，上式可以近似为
+\begin{Equation}
+    F=2.3\phi_FI_0\varepsilon bc
+\end{Equation}
+注意，低浓度时成线性关系，高浓度时由于自猝灭和自吸收等原因不成线性关系。
+
+\subsubsection{直接测定法}
+直接测定法适用于本身能发荧光的物质。
+
+直接测定法：配置一系列已知浓度的标准溶液，并测定它们的荧光强度，以荧光强度对标准溶液浓度绘制标准曲线。然后将待测试样溶液的荧光强度代入标准曲线，得到待测组分浓度。
+
+\subsubsection{间接测定法}
+间接测定法适用于本身不能发荧光的物质。
+\begin{itemize}
+    \item 荧光衍生法：待测物质与荧光试剂通过化学反应形成能发荧光的衍生物。
+    \item 荧光猝灭法：待测物质本身不发光，但能使得某种有荧光的物质发生荧光猝灭。
+\end{itemize}
+
+\subsection{定性分析}
+比较法：将待测物质的荧光发射光谱与预期化合物的荧光发射光谱进行比较，一致则为该物质。

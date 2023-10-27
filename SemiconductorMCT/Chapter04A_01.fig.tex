@@ -1,0 +1,33 @@
+\documentclass{xStandalone}
+
+\begin{document}
+\begin{tikzpicture}
+
+\xValDefine{xL}[-3.5]
+\xValDefine{xR}[+3.5]
+\xValProportion{xCa}{xL}{xR}[0.10]
+\xValProportion{xCb}{xL}{xR}[0.35]
+\xValProportion{xCc}{xL}{xR}[0.65]
+\xValProportion{xCd}{xL}{xR}[0.90]
+
+\xValDefine{yB}[-2]
+\xValDefine{yA}[+2]
+\xValProportion{yCa}{yA}{yB}[0.25]
+\xValProportion{yC}{yA}{yB}[0.5]
+\xValProportion{yCb}{yA}{yB}[0.75]
+
+\xGeneratePoints{xL,xR,xCa,xCb,xCd,xCc,xCd}{yB,yA,yCa,yC,yCb}
+
+\draw[very thick] (xL/yB) -- (xR/yB) node[right] {$\sigma$} node[right=0.8cm]{\tiny 成键轨道};
+\draw[very thick] (xL/yCb) -- (xR/yCb) node[right] {$\pi$}node[right=0.8cm]{\tiny 成键轨道};
+\draw[very thick] (xL/yC) -- (xR/yC) node[right] {$n$} node[right=0.8cm]{\tiny 非键轨道};
+\draw[very thick] (xL/yCa) -- (xR/yCa) node[right] {$\pi^{*}$} node[right=0.8cm]{\tiny 反键轨道};
+\draw[very thick] (xL/yA) -- (xR/yA) node[right] {$\sigma^{*}$} node[right=0.8cm]{\tiny 反键轨道};
+
+\draw[-latex] (xCa/yB) -- (xCa/yA) node[above] {$\sigma\to\sigma^{*}$};
+\draw[-latex] (xCb/yC) -- (xCb/yA) node[above] {$n\to\sigma^{*}$};
+\draw[-latex] (xCc/yCb) -- (xCc/yCa) node[above] {$\pi\to\pi^{*}$};
+\draw[-latex] (xCd/yC) -- (xCd/yCa) node[above] {$n\to\pi^{*}$};
+
+\end{tikzpicture}
+\end{document}
